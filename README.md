@@ -23,7 +23,7 @@ For the validation set only images from the center camera are used. After the se
 - Randomly flipping of image
 
 #Description of CNN
-For the CNN I applied and implemted the CNN from Nvidia. The CNN is described as follows:
+For the CNN I applied 'Transfer Learning' and implemted the CNN from Nvidia. The CNN is described as follows:
 - The convolutional layers were designed to perform feature extraction and were chosen empirically through a series of experiments that varied layer configurations. We use strided convolutions in the first three convolutional layers with a 2x2 stride and a 5x5 kernel and a non-strided convolution with a 3x3 kernel size in the last two convolutional layers. 
 - We follow the five convolutional layers with three fully connected layers leading to an output control value which is the inverse turning radius. The fully connected layers are designed to function as a controller for steering.
 Additionally, in order to reduce overfitting after each layer a drop out of 0.3 has been added to the model.
